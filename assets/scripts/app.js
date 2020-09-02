@@ -9,7 +9,7 @@ const store = require('./store')
 // use require without a reference to ensure a file is bundled
 // require('./example')
 
-const getFormFields = require('..../lib/get-form-fields.js')
+// const getFormFields = require('..../lib/get-form-fields.js')
 
 // jQuery method (runs code after HTML)
 // event listeners go here
