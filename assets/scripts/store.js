@@ -1,3 +1,4 @@
+// Exports the object store
 'use strict'
 
 const store = {

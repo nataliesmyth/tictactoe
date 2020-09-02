@@ -12,6 +12,33 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <main>
+        <header>
+          <h1>Tic Tac Toe</h1>
+          <h2> This is a toy application. Do not use real passwords!</h2>
+        </header>
+
+
+
+          <form id ="sign-up">
+            <input name="credentials[email]" type="text" value="an@example.email">
+            <input name="credentials[password]" type="password" value="an example password">
+            <input name="credentials[password_confirmation]" type="password" value="an example password">
+            <button type="submit">Sign Up</button>
+          </form>
+          
+          <form id="sign-in">
+            <input name="credentials[email]" type="text" value="an@example.email">
+            <input name="credentials[password]" type="password" value="an example password">
+            <button type="submit">Sign In</button>
+          </form>
+
+          <form>
+            <input name="passwords[old]" type="password">
+            <input name="passwords[new]" type="password">
+            <button type="submit">Change</button>
+          </form>
+
+      </main>
     </body>
 </html>
