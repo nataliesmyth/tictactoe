@@ -1,6 +1,6 @@
 'use strict'
 
-const store = require('../store')
+import { user } from '../store'
 
 const signUpSuccess = function (data) {
   $('#message').text('Signed up successfully')
@@ -21,7 +21,7 @@ const signInSuccess = function (data) {
   $('#message').removeClass()
   $('#message').addClass('success')
   console.log('signInSuccess ran. Data is :', data)
-  store.user = data.user
+  user = data.user
 }
 
 const signInFailure = function (error) {
@@ -37,7 +37,7 @@ const signOutSuccess = function () {
   $('#message').addClass('success')
   $('form').trigger('reset')
   console.log('signOutSuccess ran and nothing was returned!')
-  store.user = null
+  user = null
 }
 
 const signOutFailure = function (error) {
@@ -61,7 +61,7 @@ const changePasswordFailure = function (error) {
   console.error('changePasswordFailure ran. Error is :', error)
 }
 
-module.exports = {
+export default {
   signUpSuccess,
   signUpFailure,
   signInSuccess,
