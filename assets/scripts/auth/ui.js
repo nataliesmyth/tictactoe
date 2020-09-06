@@ -1,6 +1,6 @@
 'use strict'
 
-import { user } from '../store'
+const store = require('../store')
 
 const signUpSuccess = function (data) {
   $('#message').text('Signed up successfully')
@@ -61,7 +61,7 @@ const changePasswordFailure = function (error) {
   console.error('changePasswordFailure ran. Error is :', error)
 }
 
-export default {
+module.exports = {
   signUpSuccess,
   signUpFailure,
   signInSuccess,
