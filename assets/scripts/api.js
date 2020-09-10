@@ -8,7 +8,6 @@ const signUp = function (data) {
     url: config.apiUrl + '/sign-up',
     method: 'POST',
     data
-    // data: data
   })
 }
 
@@ -17,7 +16,6 @@ const signIn = function (data) {
     url: config.apiUrl + '/sign-in',
     method: 'POST',
     data
-    // data: data
   })
 }
 
@@ -40,7 +38,6 @@ const changePassword = function (data) {
       Authorization: 'Token token=' + store.user.token
     },
     data
-    // data: data
   })
 }
 

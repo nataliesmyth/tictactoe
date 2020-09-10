@@ -1,1 +1,0 @@
-curl --include --request GET

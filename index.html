@@ -17,39 +17,26 @@
         </header>
 
         <form id="sign-up">
-          <fieldset>
-            <legend>Sign up</legend>
             <input type="text" name="credentials[email]" placeholder="Email">
             <input type="password" name="credentials[password]" placeholder="Password">
             <input type="password" name="credentials[password_confirmation]" placeholder="Confirm Password">
-            <input type="submit" value="Sign up">
-          </fieldset>
-        </form>
+            <button type="submit">Sign Up</button>
+          </form>
       
         <form id="sign-in">
-          <fieldset>
-            <legend>Sign in</legend>
-            <input type="text" name="credentials[email]" placeholder="Email">
-            <input type="password" name="credentials[password]" placeholder="Password">
-            <input type="submit" value="Sign in">
-          </fieldset>
-        </form>
-      
-        <form id="sign-out">
-          <fieldset>
-            <legend>Sign Out</legend>
-            <input type="submit" value="Sign out">
-          </fieldset>
+          <input type="text" name="credentials[email]" placeholder="Email">
+          <input type="password" name="credentials[password]" placeholder="Password">
+          <button type="submit">Sign In</button>
         </form>
       
         <form id="change-password">
-          <fieldset>
-            <legend>Change Password</legend>
             <input type="password" name="passwords[old]" placeholder="Old Password">
             <input type="password" name="passwords[new]" placeholder="New Password">
-            <input type="submit" value="Change Password">
-          </fieldset>
+            <button type="submit">Change Password</button>
         </form>
+
+        <button id="sign-out">Sign Out</button>
+        <button id="new-game">New Game</button>
 
       </main>
     </body>
