@@ -3,7 +3,7 @@
 const gameLogic = require('./game_logic')
 const getFormFields = require('./../../lib/get-form-fields.js')
 const ticApi = require('./ticApi')
-const ticUi = require('./ticApi')
+const ticUi = require('./ticUi')
 
 const onStartGame = function (event) {
   event.preventDefault()
