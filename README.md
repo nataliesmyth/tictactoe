@@ -6,7 +6,7 @@ ADD WHY I'M DOING THIS
 
 ## Important Links
 
-- [Other Repo](www.link.com)
+- [Other Repo](www.github.com/nataliesmyth/tictactoe)
 - [Deployed API](www.link.com)
 - [Deployed Client](www.link.com)
 
