@@ -2,17 +2,17 @@
 
 const gameLogic = require('./game_logic')
 const getFormFields = require('./../../lib/get-form-fields.js')
-const ticApi = require('./ticApi')
-const ticUi = require('./ticUi')
+const gameApi = require('./game-api')
+const ui = require('./game-ui')
 
 const onStartGame = function (event) {
   event.preventDefault()
   document.getElementById('board').classList.add('row', currentChoice)
   const form = event.target
   const data = getFormFields(form)
-  ticApi.startGame(data)
-    .then(ticUi.onStartGameSuccess)
-    .catch(ticUi.onStartGameFailure)
+  gameApi.startGame(data)
+    .then(gameUi.onStartGameSuccess)
+    .catch(gameUi.onStartGameFailure)
 }
 
 const onGameHistory = function (event) {
@@ -20,17 +20,17 @@ const onGameHistory = function (event) {
   const form = event.target
   const data = getFormFields(form)
 
-  ticApi.gameHistory(data)
-    .then(ticUi.onGameHistorySuccess)
-    .catch(ticUi.onGameHistoryFailure)
+  gameApi.gameHistory(data)
+    .then(gameUi.onGameHistorySuccess)
+    .catch(gameUi.onGameHistoryFailure)
 }
 
 const onSaveGame = function (event) {
   event.preventDefault()
 
-  ticApi.saveGame(data)
-    .then(ticUi.onSaveGameSuccess)
-    .catch(ticUi.onSaveGameFailure)
+  gameApi.saveGame(data)
+    .then(gameUi.onSaveGameSuccess)
+    .catch(gameUi.onSaveGameFailure)
 }
 
 module.export = {
