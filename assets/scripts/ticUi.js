@@ -19,6 +19,6 @@ const onStartGameFailure = function () {
 }
 
 module.export = {
-    onStartGameSuccess,
-    onStartGameFailure
+  onStartGameSuccess,
+  onStartGameFailure
 }

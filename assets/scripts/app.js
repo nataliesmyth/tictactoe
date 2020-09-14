@@ -1,11 +1,12 @@
 'use strict'
 
 const authEvents = require('./auth/events')
-const ticGame = require('./ticGame')
 
 $(() => {
   $('#tic-game').hide()
   $('#sign-out').hide()
+  $('#start-game').hide()
+  $('#save-game').hide()
   $('#change-password').hide()
   $('#sign-up').on('submit', authEvents.onSignUp)
   $('#sign-in').on('submit', authEvents.onSignIn)

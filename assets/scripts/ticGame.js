@@ -5,15 +5,15 @@ const ticApi = require('./ticApi')
 
 // Game Functionality
 let currentChoice = 'X'
-let boxEventIndex = null
+const boxEventIndex = null
 let over = false
-let data = {
+const data = {
   game: {
     cell: {
       index: boxEventIndex,
       value: currentChoice
     },
-    over: over
+    over
   }
 }
 
@@ -47,7 +47,7 @@ const onClick = function (event) {
           index: boxEventIndex,
           value: currentChoice
         },
-        over: over
+        over
       }
     }
 
@@ -87,7 +87,7 @@ const whoWon = function () {
   }
 }
 
-const drawGame = function() {
+const drawGame = function () {
   const draw = gameBoard.includes('')
   if (draw !== true && over === false) {
     over = true

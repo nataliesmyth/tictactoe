@@ -3,7 +3,7 @@
 const store = require('./../store')
 
 const signUpSuccess = function (data) {
-  $('#message').text('Signed up successfully')
+  $('#message').text(`${data.user.email}`)
   $('#message').removeClass()
   $('#message').addClass('success')
   console.log('signUpSuccess ran. Data is :', data)
@@ -20,6 +20,11 @@ const signInSuccess = function (data) {
   $('#message').text('Signed in successfully')
   $('#message').removeClass()
   $('#message').addClass('success')
+  $('#change-password').show()
+  $('#sign-out').show()
+  $('#sign-up').hide()
+  $('#sign-in').hide()
+  $('#start-game').show()
   console.log('signInSuccess ran. Data is :', data)
   store.user = data.user
 }
@@ -36,7 +41,11 @@ const signOutSuccess = function () {
   $('#message').removeClass()
   $('#message').addClass('success')
   $('form').trigger('reset')
-  console.log('signOutSuccess ran and nothing was returned!')
+  $('#change-password').hide()
+  $('#sign-up').show()
+  $('#sign-in').show()
+
+  console.log('signOutSuccess ran successfully!')
   store.user = null
 }
 
