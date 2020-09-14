@@ -1,7 +1,7 @@
 'use strict'
 
-const ticUi = require('./ticUi')
-const ticApi = require('./ticApi')
+const gameUi = require('./game-ui')
+const gameApi = require('./game-api')
 const getFormFields = require('./../../lib/get-form-fields')
 const store = require('./store')
 
@@ -61,7 +61,7 @@ const onClick = function (event) {
     } else {
       $('#game-message').empty()
     }
-    ticApi.saveGame(data)
+    gameApi.saveGame(data)
     $(event.target).css('pointer-events', 'none')
   }
 }
@@ -106,9 +106,9 @@ const onStartGame = function (event) {
   currentChoice = 'X'
   gameBoard = ['', '', '', '', '', '', '', '', '']
   $('.box').css('pointer-events', 'auto')
-  ticApi.startGame(data)
-    .then(ticUi.onStartGameSuccess)
-    .catch(ticUi.onStartGameFailure)
+  gameApi.startGame(data)
+    .then(gameUi.onStartGameSuccess)
+    .catch(gameUi.onStartGameFailure)
 }
 
 const onGameHistory = function (event) {
@@ -116,20 +116,18 @@ const onGameHistory = function (event) {
   const form = event.target
   const data = getFormFields(form)
 
-  ticApi.gameHistory(data)
-    .then(ticUi.onGameHistorySuccess)
-    .catch(ticUi.onGameHistoryFailure)
+  gameApi.gameHistory(data)
+    .then(gameUi.onGameHistorySuccess)
+    .catch(gameUi.onGameHistoryFailure)
 }
 
 const onSaveGame = function (event) {
   event.preventDefault()
 
-  ticApi.saveGame(data)
-    .then(ticUi.onSaveGameSuccess)
-    .catch(ticUi.onSaveGameFailure)
+  gameApi.saveGame(data)
+    .then(gameUi.onSaveGameSuccess)
+    .catch(gameUi.onSaveGameFailure)
 }
-
-// End Game
 
 
 

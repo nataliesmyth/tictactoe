@@ -1,8 +1,8 @@
 'use strict'
 
-const ticGame = require('./ticGame')
-const ticStore = require('./ticStore')
-const ticUi = require('./ticUi')
+const gameLogic = require('./game_logic')
+const gameStore = require('./game-store')
+const ui = require('./game-ui')
 const config = require('./config')
 const store = require('./store')
 

@@ -2,8 +2,6 @@
 
 This application allows the user to do sign in/up/out, change their password, and play a game of tic tac toe. If the user can only play against another person on their browser.
 
-ADD WHY I'M DOING THIS
-
 ## Important Links
 
 - [Other Repo](www.github.com/nataliesmyth/tictactoe)
@@ -12,16 +10,18 @@ ADD WHY I'M DOING THIS
 
 ## Planning Story
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ornare magna. Curabitur leo arcu, elementum in posuere vitae, rutrum eu urna. Quisque tincidunt nulla sed mi cursus, nec tristique est fermentum. Etiam lacinia id neque ut egestas. Sed consequat convallis felis nec posuere. Sed non eros sed velit viverra tincidunt. Etiam et tortor sit amet lacus volutpat dignissim. Vestibulum convallis, felis a posuere pretium, turpis enim sollicitudin neque, pretium finibus leo metus sed sapien. Praesent iaculis pharetra nunc ac rhoncus. Duis eu risus in est porttitor egestas sit amet eget metus. Maecenas iaculis auctor ullamcorper. Donec pretium dolor non nisl egestas bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ullamcorper pulvinar orci interdum mattis. Ut gravida volutpat mauris, a semper risus maximus ut.
+The planning began with wireframes to undersand the basic layout of the application. Then the project was broken down into different parts that could be broken down into steps. Originally I started with the Javascript functionality when I should have started with user authentication. Starting with authentication helpes maintain code organization and would have prevented me from having to rewrite some functionality later on in the process.
+This is a simple game application, the user can log in and play tic tac toe!
+NOTE: This is a TOY application and real passwords should not be used.
 
 ### User Stories
 
-- As a user I want to sign in/up
-- As a user I want to Create a new < resource >
-- As a user I want to Read multiple < resources >
-- As a user I want to Read a single < resource >
-- As a user I want to Update a < resource > I own
-- As a user I want to Delete a < resource > I own
+- As a user I want to sign up/in/out
+- As a user I want to create a new game
+- As a user I want to read finished games
+- As a user I want to update my password
+- As a user I want to be able to play again after current game ends.
+- As a user I want to be able to know if it's my turn or not.
 
 ### Technologies Used
 
@@ -32,8 +32,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ornare magna
 
 ### Unsolved Problems
 
-- Still need to ....
-- Would like to eventually ....
+1. Fix design issues/inconsistencies
+2. Clean up code - must work on organization.
 
 ### Images
 
@@ -41,4 +41,4 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer id ornare magna
 
 #### Wireframe
 
-![wireframe](https://lucidchart.zendesk.com/hc/article_attachments/360001080866/Facebook_Wireframe_-_New_Page.png)
+![wireframe](https://i.imgur.com/EcBiDdc.jpg)

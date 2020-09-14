@@ -1,16 +1,16 @@
 'use strict'
 
-const gameStore = require('./ticStore')
+const gameStore = require('./game-store')
 const store = require('./store')
-const ticGame = require('./ticGame')
+const gameLogic = require('./game_logic')
 
 const onStartGameSuccess = function (response) {
   gameStore.game = response.game
   $('#message').text('Good Luck, Have Fun ' + store.user.email)
   $('#game-message').html('X Goes First')
   $('.container').show()
-  $('#sign-out                        ').show()
-  $('#change-password').hide()
+  $('#sign-out-button').show()
+  $('#change-password-form').hide()
   $('#save-game').show()
   $('.box').empty()
   $('#game-winner').empty()
