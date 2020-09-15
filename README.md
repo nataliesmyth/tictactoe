@@ -41,4 +41,4 @@ NOTE: This is a TOY application and real passwords should not be used.
 
 #### Wireframe
 
-![wireframe](https://i.imgur.com/EcBiDdc.jpg)
+![wireframe](https://imgur.com/gallery/s36OsSV)
