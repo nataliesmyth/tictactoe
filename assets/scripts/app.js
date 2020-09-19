@@ -16,7 +16,7 @@ $(() => {
   $('#sign-up-form').on('submit', authEvents.onSignUp)
   $('#sign-in-form').on('submit', authEvents.onSignIn)
   $('#change-password').on('submit', authEvents.onChangePassword)
-  $('#sign-out                        ').on('click', authEvents.onSignOut)
+  $('#sign-out').on('click', authEvents.onSignOut)
   // Game Auth
   $('#start-game-button').on('click', ticGame.onStartGame)
   $('#game-history').on('click', ticGame.onGameHistory)
