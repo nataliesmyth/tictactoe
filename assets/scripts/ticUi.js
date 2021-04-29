@@ -1,15 +1,14 @@
 'use strict'
 
-const gameStore = require('./ticStore')
+const ticStore = require('./ticStore')
 const store = require('./store')
-const ticGame = require('./ticGame')
 
 const onStartGameSuccess = function (response) {
-  gameStore.game = response.game
+  ticStore.game = response.game
   $('#message').text('Good Luck, Have Fun ' + store.user.email)
   $('#game-message').html('X Goes First')
   $('.container').show()
-  $('#sign-out                        ').show()
+  $('#sign-out').show()
   $('#change-password').hide()
   $('#save-game').show()
   $('.box').empty()
@@ -44,11 +43,11 @@ const onWinningGame = function (currentChoice) {
 }
 
 module.exports = {
-  onStartGameSuccess: onStartGameSuccess,
-  onStartGameFailure: onStartGameFailure,
-  onGameHistorySuccess: onGameHistorySuccess,
-  onGameHistoryFailure: onGameHistoryFailure,
-  onSaveGameSuccess: onSaveGameSuccess,
-  onSaveGameFailure: onSaveGameFailure,
-  onWinningGame: onWinningGame
+  onStartGameSuccess,
+  onStartGameFailure,
+  onGameHistorySuccess,
+  onGameHistoryFailure,
+  onSaveGameSuccess,
+  onSaveGameFailure,
+  onWinningGame
 }

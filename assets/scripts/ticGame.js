@@ -3,9 +3,9 @@
 const ticUi = require('./ticUi')
 const ticApi = require('./ticApi')
 const getFormFields = require('./../../lib/get-form-fields')
-const store = require('./store')
+// const store = require('./store')
 
-// Game Functionality\
+// Game Functionality
 let currentChoice = 'X'
 let boxEventIndex = null
 let over = false
@@ -101,6 +101,7 @@ const drawGame = function() {
 
 // API
 const onStartGame = function (event) {
+  $('.container').show()
   event.preventDefault()
   over = false
   currentChoice = 'X'
@@ -131,12 +132,9 @@ const onSaveGame = function (event) {
 
 // End Game
 
-
-
 module.exports = {
-  onClick: onClick,
-  onStartGame: onStartGame,
-  onGameHistory: onGameHistory,
-  onSaveGame: onSaveGame,
-
+  onClick,
+  onStartGame,
+  onGameHistory,
+  onSaveGame
 }

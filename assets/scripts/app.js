@@ -3,7 +3,6 @@
 const authEvents = require('./auth/events')
 const ticGame = require('./ticGame')
 
-
 $(() => {
   // $('.container').hide()
   $('#sign-out').hide()

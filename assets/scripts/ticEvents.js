@@ -1,9 +1,9 @@
 'use strict'
 
-const gameLogic = require('./game_logic')
 const getFormFields = require('./../../lib/get-form-fields.js')
 const ticApi = require('./ticApi')
 const ticUi = require('./ticUi')
+const ticGame = require('./ticGame')
 
 const onStartGame = function (event) {
   event.preventDefault()
@@ -34,7 +34,7 @@ const onSaveGame = function (event) {
 }
 
 module.export = {
-  onStartGame: onStartGame,
-  onGameHistory: onGameHistory,
-  onSaveGame: onSaveGame
+  onStartGame,
+  onGameHistory,
+  onSaveGame
 }
