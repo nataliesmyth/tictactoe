@@ -1,17 +1,14 @@
 'use strict'
 
-const ticGame = require('./ticGame')
-const ticStore = require('./ticStore')
-const ticUi = require('./ticUi')
 const config = require('./config')
-const store = require('./store')
+const ticStore = require('./ticStore')
 
 const startGame = function(data) {
   return $.ajax({
     url: config.apiUrl + '/games',
     method: 'POST',
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + ticStore.user.token
     },
     data: {}
   })
@@ -22,7 +19,7 @@ const gameHistory = function(data) {
     url: config.apiUrl + '/games',
     method: 'GET',
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + ticStore.user.token
     }
   })
 }
@@ -32,14 +29,14 @@ const saveGame = function(data) {
     url: config.apiUrl + '/games/' + ticStore.game._id,
     method: 'PATCH',
     headers: {
-      Authorization: 'Bearer ' + store.user.token
+      Authorization: 'Bearer ' + ticStore.user.token
     },
     data: data
   })
 }
 
 module.exports = {
-  startGame: startGame,
-  gameHistory: gameHistory,
-  saveGame: saveGame
+  startGame,
+  gameHistory,
+  saveGame
 }
