@@ -29,7 +29,7 @@ const gameHistory = function(data) {
 
 const saveGame = function(data) {
   return $.ajax({
-    url: config.apiUrl + '/games/' + gameStore.game._id,
+    url: config.apiUrl + '/games/' + ticStore.game._id,
     method: 'PATCH',
     headers: {
       Authorization: 'Bearer ' + store.user.token
