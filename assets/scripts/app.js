@@ -5,7 +5,7 @@ const ticGame = require('./ticGame')
 
 
 $(() => {
-  $('.container').hide()
+  // $('.container').hide()
   $('#sign-out').hide()
   $('#save-game').hide()
   $('#change-password').hide()
