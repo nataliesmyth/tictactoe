@@ -25,10 +25,10 @@ NOTE: This is a TOY application and real passwords should not be used.
 
 ### Technologies Used
 
-- jQuery
-- HTML/CSS
 - Bootstrap
+- HTML/CSS
 - Javascript
+- jQuery
 
 ### Unsolved Problems
 
