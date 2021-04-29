@@ -1,7 +1,6 @@
 'use strict'
 const store = require('./../store')
-const ticGame = require('./../ticGame')
-
+// const ticGame = require('./../ticGame')
 
 const onSignUpSuccess = function (response) {
   $('#message').text('You have successfully signed up ' + response.user.email)
@@ -14,7 +13,6 @@ const onSignUpFailure = function () {
   $('#sign-up-form').trigger('reset')
   $('#sign-in-form').trigger('reset')
   $('#change-password').trigger('reset')
-  
 }
 
 const onSignInSuccess = function (response) {
@@ -32,6 +30,7 @@ const onSignInSuccess = function (response) {
   $('#start-game-button').show()
   $('#game-history').show()
 }
+
 const onSignInFailure = function () {
   $('#message').text('Sign in failed, please try again')
   $('#sign-up-form').trigger('reset')
