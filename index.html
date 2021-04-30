@@ -55,25 +55,24 @@
         <button id='save-game'>Save Game</button> -->
 
 
-        <p class='paragraph' id='message'></p>
-        <p class='paragraph' id='game-message'></p>
-
-        <!-- <div id="tic-game"></div> -->
-        <section>
-            <div class="container">
+        
+        <div class="container">
+          <p class='paragraph' id='message'></p>
+          <p class='paragraph' id='game-message'></p>
               <div class="row" id="board">
-                <div class="col-4 box 0" id='0' data-cell-index=0></div>
-                <div class="col-4 box 1" id='1' data-cell-index=1></div>
-                <div class="col-4 box 2" id='2' data-cell-index=2></div>
-                <div class="col-4 box 3" id='3' data-cell-index=3></div>
-                <div class="col-4 box 4" id='4' data-cell-index=4></div>
-                <div class="col-4 box 5" id='5' data-cell-index=5></div>
-                <div class="col-4 box 6" id='6' data-cell-index=6></div>
-                <div class="col-4 box 7" id='7' data-cell-index=7></div>
-                <div class="col-4 box 8" id='8' data-cell-index=8></div>
+                <div class="col-4 box 0" id='box-0' data-cell-index=0></div>
+                <div class="col-4 box 1" id='box-1' data-cell-index=1></div>
+                <div class="col-4 box 2" id='box-2' data-cell-index=2></div>
+                <div class="col-4 box 3" id='box-3' data-cell-index=3></div>
+                <div class="col-4 box 4" id='box-4' data-cell-index=4></div>
+                <div class="col-4 box 5" id='box-5' data-cell-index=5></div>
+                <div class="col-4 box 6" id='box-6' data-cell-index=6></div>
+                <div class="col-4 box 7" id='box-7' data-cell-index=7></div>
+                <div class="col-4 box 8" id='box-8' data-cell-index=8></div>
               </div>
+              <h2 id="winner"></h2>
+              <button onclick="reset_board()">RESET BOARD</button>
             </div>
-          </section>
 
 
       </main>
