@@ -6,7 +6,7 @@ This application allows the user to do sign in/up/out, change their password, an
 
 - [Other Repo](www.github.com/nataliesmyth/tictactoe)
 - [Deployed API](www.link.com)
-- [Deployed Client](www.link.com)
+- [Deployed Client](https://nataliesmyth.github.io/tictactoe/)
 
 ## Planning Story
 
