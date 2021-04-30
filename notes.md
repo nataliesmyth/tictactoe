@@ -1,4 +1,4 @@
-## Updating package.json
+# Updating package.json
 
 At the beginning of each cohort, update the versions in package.json by:
 
@@ -11,6 +11,7 @@ npm update --save-dev
   # note: make sure it works
 rm package.json.bak
 ```
+
 - the above sed command replaces all of the versions with an `*`. Then npm updates grab the latest version and replace.
 
 ## Structure
